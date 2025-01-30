@@ -1,0 +1,11 @@
+<h1>Закрытая большая и тяжелая страница</h1>
+<app-menu></app-menu>
+
+<div>
+  <input [(ngModel)]="inputMessage" placeholder="Введите сообщение">
+  <button (click)="sendMessage()">Отправить</button>
+</div>
+
+<ul>
+  <li *ngFor="let message of messages">{{ message }}</li>
+</ul>
